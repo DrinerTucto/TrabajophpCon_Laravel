@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\recur;
 use Illuminate\Http\Request;
+use PhpParser\Node\Stmt\Return_;
 
 class RecurController extends Controller
 {
@@ -14,6 +15,7 @@ class RecurController extends Controller
      */
     public function index()
     {
+        return view("reservacion.index");
         //
     }
 
@@ -24,6 +26,8 @@ class RecurController extends Controller
      */
     public function create()
     {
+        return view("reservacion.reserva");
+
         //
     }
 
@@ -36,6 +40,8 @@ class RecurController extends Controller
     public function store(Request $request)
     {
         //
+        $datosreservacion=request()->all();
+        return  response()->json($datosreservacion);
     }
 
     /**

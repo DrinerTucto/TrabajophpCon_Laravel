@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\RecurController;
+use Illuminate\Routing\ResourceRegistrar;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +18,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('principal');
 });
+Route::get('/reservacion', function () {
+    return view('reservacion.index');
+});
+
+route::get('/reservacion/reserva',[RecurController::class,'create']);
+route::resource('reservacion',RecurController::class);
