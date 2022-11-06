@@ -40,7 +40,8 @@ class RecurController extends Controller
     public function store(Request $request)
     {
         //
-        $datosreservacion=request()->all();
+        $datosreservacion=request()->except('_token');
+        Recur::insert($datosreservacion);
         return  response()->json($datosreservacion);
     }
 

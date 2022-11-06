@@ -1,4 +1,4 @@
 
 
 
-<a href="welcome.blade.php">holas</a><a href=""></a><a href=""></a>
+<a href="reservacion/reserva">holas</a><a href=""></a><a href=""></a>

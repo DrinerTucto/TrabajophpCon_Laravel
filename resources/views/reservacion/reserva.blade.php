@@ -7,8 +7,8 @@
     <br>
 
 
-    <label for="Apellido"> Apellido</label>
-    <input type="text" name="Apellido" id="Apellido">
+    <label for="Apellidos"> Apellidos</label>
+    <input type="text" name="Apellidos" id="Apellido">
     <br>
 
     <label for="Dni"> Dni</label>
@@ -23,6 +23,6 @@
     <label for="Foto"> Foto</label>
     <input type="file" name= "Foto" id= "Foto">
     <br>
-    <input type="submit" name="Enviar"id="Enviar">
+    <input type="submit" value="enviar">
 
 </form>
