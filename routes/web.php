@@ -18,8 +18,10 @@ use Illuminate\Routing\ResourceRegistrar;
 Route::get('/', function () {
     return view('principal');
 });
+
 Route::get('/reservacion', function () {
     return view('reservacion.index');
+
 });
 
 route::get('/reservacion/reserva',[RecurController::class,'create']);
