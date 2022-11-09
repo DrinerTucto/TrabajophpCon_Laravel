@@ -1,5 +1,7 @@
+<h1>Reservacion de viajes</h1>
+
 <table class="table table-light">
-    <thead class="thead-light">
+    <thead class="thead-light">        
         <tr>
             <th>#</th>
             <th>Nombre</th>
@@ -23,11 +25,16 @@
             <td>{{$reservacion->Numero}}</td>
             <td>{{$reservacion->Correo}}</td>            
             <td>{{$reservacion->Foto}}</td>
-            <td>Modificar</td>
+            <td>
+                
+                <a href="{{url('reservacion/'.$reservacion->id.'edit')}}">
+                    Modificar
+                </a>
+                
 
         </tr>
 
         @endforeach
-        
+
     </tbody>
 </table>

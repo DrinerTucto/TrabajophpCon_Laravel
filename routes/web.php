@@ -25,4 +25,7 @@ Route::get('/reservacion', function () {
 });
 
 route::get('/reservacion/reserva',[RecurController::class,'create']);
-route::resource('reservacion',RecurController::class);
+route::resource('reservacion',RecurController::class); 
+
+
+

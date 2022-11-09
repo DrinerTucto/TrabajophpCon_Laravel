@@ -71,6 +71,8 @@ if ($request->hasFile('Foto')){
      */
     public function edit(recur $recur)
     {
+        return view("reservacion.modifi");
+
         //
     }
 
