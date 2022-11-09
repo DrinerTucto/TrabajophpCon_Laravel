@@ -9,7 +9,7 @@ formulario
 
 
 <label for="Apellidos"> Apellidos</label>
-<input type="text" name="Apellidos" id="Apellido">
+<input type="text" name="Apellidos"val id="Apellido">
 <br>
 
 <label for="Dni"> Dni</label>
@@ -24,6 +24,6 @@ formulario
 <label for="Foto"> Foto</label>
 <input type="file" name= "Foto" id= "Foto">
 <br>
-<input type="submit" onclick="return confirm('Los datos enviados no podran ser borrados')" value="enviar">
+<input type="submit" onclick="return confirm('Verifica los datos xfavor xq una ves enviado no podra modificarlos ni eleminarlos...!!solo el programador podra hacerlo atm:Driner!!')" value="enviar">
   
 </form>

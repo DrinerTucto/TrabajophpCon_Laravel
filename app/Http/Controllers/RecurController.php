@@ -15,7 +15,7 @@ class RecurController extends Controller
      */
     public function index()
     {
-        $re['reservaciones']=recur::paginate(5);
+        $re['reservaciones']=recur::paginate(3);
         return view("reservacion.index",$re);
         //
     }
@@ -44,12 +44,13 @@ class RecurController extends Controller
         $datosreservacion=request()->except('_token');
 if ($request->hasFile('Foto')){
 
-    $datosreservacion['Foto']=$request->file('Foto')->store('imagenes','public');
+    $datosreservacion['Foto']=$request->file('Foto')->store('uploads','public');
 }
 
         Recur::insert($datosreservacion);
 
-        return  response()->json($datosreservacion);
+        /*return  response()->json($datosreservacion);*/
+        return redirect('reservacion')->with('mensaje','Registro exitoso...Gracias por su eleccion');
     }
 
     /**
