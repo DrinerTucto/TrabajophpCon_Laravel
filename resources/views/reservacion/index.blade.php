@@ -24,14 +24,10 @@
             <td>{{$reservacion->Dni}}</td>
             <td>{{$reservacion->Numero}}</td>
             <td>{{$reservacion->Correo}}</td>            
-            <td>{{$reservacion->Foto}}</td>
             <td>
-                
-                <a href="{{url('reservacion/'.$reservacion->id.'edit')}}">
-                    Modificar
-                </a>
-                
 
+                <img src="{{ asset('storage').'/'.$reservacion->Foto}}" alt="">
+            </td>
         </tr>
 
         @endforeach
