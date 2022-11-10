@@ -27,9 +27,14 @@ body{
     margin-left: 30px;
 
 }
+h1{
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+}
 
 thead{
-    background-color: brown;
+    font-size: 15px;
+    background-color: rgba(13, 150, 236, 0.45);
 }
 th{
     padding: 20px 75px;
@@ -39,6 +44,7 @@ th{
 td{
     padding: 15px 30px;
     border-top:solid 2px white;
+    color: rgb(255, 255, 255);
 
 
 
@@ -52,28 +58,68 @@ li{
 }
 header{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between;  
+    align-items: center;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.331);
+
+
+
 }
 .logo{
-width: 50px;
-height: 50px;
+width: 55px;
+height: 55px;
+}
+.logo1{
+width: 60px;
+height: 60px;
+}
+.mundo{
+height: 40px;
+width: 40px;
 }
 .exitoso{
     color: rgb(0, 0, 0);
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 30px;
 }
+li a{
+    justify-content: center;
+    font-family:fantasy;
+    color: #000;
+    margin: 50px;
+    text-decoration: none; 
+    font-size: 20px;
+}
+li a:hover{
+    background-color: rgb(193, 161, 223);
+    padding: 20px;
+    border-radius: 20px;
+    
+}
+span{
+    color: rgb(255, 0, 0);
+}
+a.{
+    display: flex;
+    align-items: center;
+}
+.a{
+    display:flex;
+    color: #000
+}
+
 </style>
 
   <header>
   
-<div class="A">
-    <img class="logo" src="https://cdn-icons-png.flaticon.com/512/984/984284.png" alt="">
-    <span>ViajaConDriner</span>
+<div class="a">
+    <img class="mundo" src="https://cdn-icons-png.flaticon.com/512/984/984284.png" alt="">
+     <h4 class="driner">ViajaConDriner</h4>
 </div>
 <nav class="menu">
-    <li><a href="{{url('reservacion/reserva')}}">NUEVA RESERVACION</a></li>
-    <li><a href="#">Contactos</a></li>
+    <li><a href="{{url('reservacion/reserva')}}">NUEVA<span>   RESERVACION</span></a></li>
+    <li><a href="#">CONTACTOS</a></li>
 </nav>
 </header>
 <div class="exitoso">
@@ -83,8 +129,12 @@ height: 50px;
 @endif
 </div>
 <div class="contenedor">
-    <h1>Reservacion de viajes</h1>
-
+    <h1>
+        <img class="logo" src="https://cdn-icons-png.flaticon.com/512/826/826070.png
+" alt="">
+        RESERVACION  DE  VIAJE
+    <img class="logo1" src="https://cdn-icons-png.flaticon.com/512/1358/1358770.png " alt="">
+</h1>
 <table class="table table-light">
     <thead class="thead">        
     
