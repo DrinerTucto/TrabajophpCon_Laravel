@@ -75,6 +75,7 @@ width: 60px;
 height: 60px;
 }
 .mundo{
+margin-left:25px;    
 height: 40px;
 width: 40px;
 }
