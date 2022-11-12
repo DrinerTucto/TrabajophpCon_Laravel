@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\RecurController;
+
 use Illuminate\Routing\ResourceRegistrar;
 
 /*
@@ -28,4 +28,6 @@ route::get('/reservacion/reserva',[RecurController::class,'create']);
 route::resource('reservacion',RecurController::class); 
 
 
+Auth::routes();
 
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
