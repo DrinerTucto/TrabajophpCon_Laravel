@@ -16,17 +16,16 @@ use Illuminate\Routing\ResourceRegistrar;
 */
 
 Route::get('/', function () {
-    return view('principal');
+    return view('welcome');
 });
 
-Route::get('/reservacion', function () {
+/* Route::get('/reservacion', function () {
     return view('reservacion.index');
 
 });
 
-route::get('/reservacion/reserva',[RecurController::class,'create']);
-route::resource('reservacion',RecurController::class); 
-
+route::get('/reservacion/reserva',[RecurController::class,'create']);*/
+route::resource('reservacion',RecurController::class);
 
 Auth::routes();
 
