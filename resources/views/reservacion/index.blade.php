@@ -20,7 +20,7 @@ body{
     background-size: cover;
 }
 .contenedor{
-    
+
     text-align: center;
     margin-top: 20px;
     border: solid 2px white;
@@ -49,7 +49,7 @@ td{
 
 
 
-      
+
 }
 li{
     display: inline-block;
@@ -58,7 +58,7 @@ li{
 }
 header{
     display: flex;
-    justify-content: space-between;  
+    justify-content: space-between;
     align-items: center;
     color: white;
     background-color: rgba(255, 255, 255, 0.331);
@@ -75,7 +75,7 @@ width: 60px;
 height: 60px;
 }
 .mundo{
-margin-left:25px;    
+margin-left:25px;
 height: 40px;
 width: 40px;
 }
@@ -89,17 +89,17 @@ li a{
     font-family:fantasy;
     color: #000;
     margin: 50px;
-    text-decoration: none; 
+    text-decoration: none;
     font-size: 20px;
 }
 li a:hover{
     background-color: rgb(193, 161, 223);
     padding: 20px;
     border-radius: 20px;
-    
+
 }
 span{
-    color: rgb(255, 0, 0);
+    color: rgb(238, 90, 90);
 }
 a.{
     display: flex;
@@ -113,7 +113,7 @@ a.{
 </style>
 
   <header>
-  
+
 <div class="a">
     <img class="mundo" src="https://cdn-icons-png.flaticon.com/512/984/984284.png" alt="">
      <h4 class="driner">ViajaConDriner</h4>
@@ -137,8 +137,8 @@ a.{
     <img class="logo1" src="https://cdn-icons-png.flaticon.com/512/1358/1358770.png " alt="">
 </h1>
 <table class="table table-light">
-    <thead class="thead">        
-    
+    <thead class="thead">
+
         <tr class="sepa">
             <th>#</th>
             <th>Nombre</th>
@@ -152,29 +152,29 @@ a.{
     <tbody>
 
         @foreach ($reservaciones as $reservacion)
-            
+
         <tr class="thead-light">
             <td>{{$reservacion->id}}</td>
             <td>{{$reservacion->Nombre}}</td>
             <td>{{$reservacion->Apellidos}}</td>
             <td>{{$reservacion->Dni}}</td>
-                    
+
              <td>{{$reservacion->Numero}}</td>
-            <td>{{$reservacion->Correo}}</td>   
-            
+            <td>{{$reservacion->Correo}}</td>
+
             <td>
 
                 <img src="{{ asset('storage').'/'.$reservacion->Foto}}">
             </td>
-                
-    
+
+
         </tr>
 
         @endforeach
 
-    </tbody>        
+    </tbody>
 
-</table>    
+</table>
 
 </div>
 

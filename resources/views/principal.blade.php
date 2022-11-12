@@ -2,7 +2,7 @@
 <style>
     body{
         margin: 0px;
-        padding: 0px;;
+        padding: 0px;
     }
     .contenedor{
         background-image:url("https://wallpaperaccess.com/full/652483.jpg");
@@ -25,6 +25,18 @@
     .a{
         position: absolute;
         display: flex;
+    }
+    .nave{
+        position: absolute;
+        display: flex;
+        margin-left: 84%;
+    }
+    .menu{
+        text-decoration:none;
+        font-size: 20px;
+        margin: 20px;
+        color: #ffffff;
+
     }
     h4{
         font-size: 20px;
@@ -54,6 +66,10 @@
     }
     p{
         font-size: 20px;
+    }
+    .nave {
+        display: flex;
+        justify-content: space-between;
     }
     .parrafo1{
         float: right;
@@ -107,18 +123,20 @@
         height: 50px;
     }
 </style>
+<div class="nave">
+    <a class="menu" href="">Login</a>
+    <a class="menu" href="">Registrar</a>
+
+</div>
 <div class="a">
     <img class="mundo" src="https://cdn-icons-png.flaticon.com/512/984/984284.png" alt="">
-    <h4 class="driner">ViajaConDriner</h4>
+         <h4 class="driner">ViajaConDriner</h4>
 </div>
-
-
-
 
 
 <div class="contenedor">
     <h1 class="titulo">Lugares turisticos que debes conocer</h1>
-    <div class="a">
+    <div class="flecha">
         <img class="abajo1" src="https://cdn-icons-png.flaticon.com/512/4151/4151471.png "> </a>
     </div>
 </div>
