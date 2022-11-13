@@ -74,6 +74,9 @@
     .container-from ui li{
         padding: .3em;
     }
+    span{
+        color: #e86363;
+    }
     /*responce*/
    @media (min-width:700px) {
        body {
@@ -104,11 +107,12 @@
 
 
     <div class="container" >
-        <h1 class="logo">Registrate Aqui</h1>
+        <h1 class="logo">Inicia Sesion <span>Aqui</span> </h1>
+
 
         <div class="container-cont">
             <div class="container-from">
-                <h3>REGISTROS AQUI</h3>
+                <h3>REGISTRARSE AQUI</h3>
                 <form action="{{ url('/reservacion') }}" method="POST" enctype="multipart/form-data">
 
                 @csrf
@@ -152,7 +156,7 @@ enviar
 
                 <ui>
 <p>
-    lofsfsdvxzmvxmcv xzmv mvfzdvzvmlmzvmxmvxzvxzvxzcvxvxcv
+   Mi nombre es Driner Tucto Nieto estare atento a tus consultas Gracias
 </p>
 
                 </ui>
